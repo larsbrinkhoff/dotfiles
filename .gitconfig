@@ -1,0 +1,5 @@
+[user]
+        name = Lars Brinkhoff
+        email = lars@nocrew.org
+[credential]
+        helper = cache --timeout=100000
