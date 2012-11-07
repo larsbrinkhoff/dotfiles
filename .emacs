@@ -1,6 +1,6 @@
 (require 'cl)
 
-(dolist (x '(narrow-to-region eval-expression downcase-region))
+(dolist (x '(narrow-to-region eval-expression downcase-region scroll-left))
   (put x 'disabled nil))
 
 (macrolet ((disable (sym) `(when (fboundp ',sym) (,sym -1))))
