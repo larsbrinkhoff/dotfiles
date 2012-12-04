@@ -11,9 +11,9 @@
 
 (setq backup-by-copying-when-linked t
       backup-by-copying-when-mismatch t
-      calendar-latitude 57.7068		;57°42'24"
+      calendar-latitude 57.7069		;57°42'24"
       calendar-location-name "Gothenburg"
-      calendar-longitude 11.9628	;11°57'46"
+      calendar-longitude 11.9629	;11°57'46"
       calendar-week-start-day 1
       delete-old-versions t
       display-time-24hr-format t
@@ -26,6 +26,8 @@
       scroll-step 1
       user-mail-address "lars@nocrew.org"
       version-control t)
+
+;;;(byte-compile-disable-warning 'cl-functions)
 
 (display-time)
 (require 'jka-compr)
