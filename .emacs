@@ -30,4 +30,5 @@
 ;;;(byte-compile-disable-warning 'cl-functions)
 
 (display-time)
+(winner-mode 1)
 (require 'jka-compr)
