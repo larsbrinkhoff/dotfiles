@@ -1,6 +1,7 @@
 (require 'cl)
 
-(dolist (x '(narrow-to-region eval-expression downcase-region scroll-left))
+(dolist (x '(narrow-to-region eval-expression upcase-region downcase-region
+	     scroll-left))
   (put x 'disabled nil))
 
 (macrolet ((disable (sym) `(when (fboundp ',sym) (,sym -1))))
@@ -32,3 +33,10 @@
 (display-time)
 (winner-mode 1)
 (require 'jka-compr)
+(require 'package)
+
+(custom-set-variables
+  ;; custom-set-variables was added by Custom -- don't edit or cut/paste it!
+  ;; Your init file should contain only one such instance.
+ '(font-lock-global-modes nil)
+ '(global-font-lock-mode nil nil (font-lock)))
