@@ -1,0 +1,23 @@
+[ui]
+username = Lars Brinkhoff <lars@nocrew.org>
+verbose  = True
+
+;; internal merge with the conflict markers
+merge    = internal:merge
+
+[extensions]
+graphlog =
+purge = 
+eol =
+rebase =
+shelve =
+record =
+
+[tortoisehg]
+
+[alias]
+;; short log
+log1 = log -l15 --template '{rev}:{node|short} {date|shortdate} {author|user}\n{desc|firstline}\n\n'
+
+;; compact glog
+cglog = glog --style compact
