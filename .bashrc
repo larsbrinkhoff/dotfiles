@@ -1,1 +1,4 @@
-test "$TERM" = dumb && export GIT_PAGER=cat
+if [ "$TERM" = dumb ] ; then
+  export GIT_PAGER=cat
+  export GIT_EDITOR=emacsclient
+fi
