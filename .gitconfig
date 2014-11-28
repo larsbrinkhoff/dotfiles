@@ -5,3 +5,5 @@
 	st = status -s
 [credential]
         helper = cache --timeout=100000
+[push]
+	default = simple
