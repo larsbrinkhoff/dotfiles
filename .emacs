@@ -4,11 +4,9 @@
 	     scroll-left))
   (put x 'disabled nil))
 
-(macrolet ((disable (sym) `(when (fboundp ',sym) (,sym -1))))
-  (disable menu-bar-mode)
-  (disable tool-bar-mode)
-  (disable scroll-bar-mode)
-  (disable global-font-lock-mode))
+(dolist (x '(menu-bar-mode tool-bar-mode scroll-bar-mode global-font-lock-mode))
+  (when (fboundp x)
+    (funcall x -1)))
 
 (setq backup-by-copying-when-linked t
       backup-by-copying-when-mismatch t
