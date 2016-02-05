@@ -31,7 +31,6 @@
 (display-time)
 (winner-mode 1)
 (require 'jka-compr)
-(require 'package)
 
 (custom-set-variables
   ;; custom-set-variables was added by Custom -- don't edit or cut/paste it!
