@@ -37,3 +37,7 @@
   ;; Your init file should contain only one such instance.
  '(font-lock-global-modes nil)
  '(global-font-lock-mode nil nil (font-lock)))
+
+(when (file-accessible-directory-p "~/quicklisp")
+  (load (expand-file-name "~/quicklisp/slime-helper.el"))
+  (setq inferior-lisp-program "sbcl"))
