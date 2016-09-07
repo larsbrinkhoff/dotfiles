@@ -3,7 +3,6 @@
         email = lars@nocrew.org
 [alias]
 	st = status -s
-	ff = merge --ff-only
 	amend = commit --amend -C HEAD
 	sdiff = diff --staged
 [credential]
