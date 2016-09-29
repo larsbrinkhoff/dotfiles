@@ -26,6 +26,10 @@
       user-mail-address "lars@nocrew.org"
       version-control t)
 
+(add-hook 'shell-mode
+	  (lambda ()
+	    (local-set-key (kbd "C-z") 'comint-stop-subjob)))
+
 ;;;(byte-compile-disable-warning 'cl-functions)
 
 (display-time)
