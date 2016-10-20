@@ -24,7 +24,8 @@
       scroll-conservatively 3
       scroll-step 1
       user-mail-address "lars@nocrew.org"
-      version-control t)
+      version-control t
+      line-move-visual nil)
 
 (add-hook 'shell-mode
 	  (lambda ()
