@@ -1,0 +1,10 @@
+XTerm*font: *-fixed-*-*-*-20-*
+Xterm*scrollBar: false
+XTerm*saveLines: 10000
+XTerm*background: white
+XTerm*foreground: black
+XTerm*VT100.geometry: 80x60
+XTerm*metaSendsEscape: true
+!XTerm*decTerminalID: vt340
+!XTerm*numColorRegisters: 256
+XTerm*sixelScrolling: true
