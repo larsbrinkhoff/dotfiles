@@ -31,6 +31,9 @@
 	  (lambda ()
 	    (local-set-key (kbd "C-z") 'comint-stop-subjob)))
 
+;; For ITS assembly language files.
+(fset 'midas-mode 'asm-mode)
+
 ;;;(byte-compile-disable-warning 'cl-functions)
 
 (display-time)
