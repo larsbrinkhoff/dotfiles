@@ -27,6 +27,8 @@
       version-control t
       line-move-visual nil)
 
+(setq-default indent-tabs-mode nil)
+
 (add-hook 'shell-mode
 	  (lambda ()
 	    (local-set-key (kbd "C-z") 'comint-stop-subjob)))
