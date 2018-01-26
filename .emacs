@@ -42,12 +42,8 @@
 (winner-mode 1)
 (require 'jka-compr)
 
-(set-face-attribute 'mode-line nil
-		    :foreground "White"
-		    :background "Black")
-(set-face-attribute 'mode-line nil
-		    :foreground "White"
-		    :background "Grey")
+(set-face-attribute 'mode-line nil :box nil)
+(set-face-attribute 'mode-line-inactive nil :box nil)
 
 (custom-set-variables
  '(font-lock-global-modes nil)
