@@ -56,3 +56,13 @@
 (when (ignore-errors (require 'package))
   (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
   (package-initialize))
+(put 'narrow-to-page 'disabled nil)
+
+(defun who-cares-if-its-tabs-or-spaces ()
+  "Indent using TABs or spaces depending on the file contents."
+  (save-excursion
+    (beginning-of-buffer)
+    (setq indent-tabs-mode (search-forward "\t" nil t))))
+
+(add-hook 'c-mode-hook 'who-cares-if-its-tabs-or-spaces)
+(add-hook 'c++-mode-hook 'who-cares-if-its-tabs-or-spaces)
