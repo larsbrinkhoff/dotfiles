@@ -3,7 +3,7 @@
         email = lars@nocrew.org
 [alias]
 	amend = commit --amend -C HEAD
-	sdiff = diff --staged
+	sdiff = diff --staged -M
 [credential]
         helper = cache --timeout=100000
 [push]
