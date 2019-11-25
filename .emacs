@@ -27,7 +27,8 @@
       version-control t
       line-move-visual nil)
 
-(setq-default indent-tabs-mode nil)
+(setq-default indent-tabs-mode nil
+              require-final-newline nil)
 
 (add-hook 'shell-mode
 	  (lambda ()
