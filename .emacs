@@ -67,3 +67,7 @@
 
 (add-hook 'c-mode-hook 'who-cares-if-its-tabs-or-spaces)
 (add-hook 'c++-mode-hook 'who-cares-if-its-tabs-or-spaces)
+
+(require 'server)
+(unless (server-running-p)
+  (server-start))
