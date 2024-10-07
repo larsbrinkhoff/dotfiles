@@ -25,7 +25,8 @@
       scroll-step 1
       user-mail-address "lars@nocrew.org"
       version-control t
-      line-move-visual nil)
+      line-move-visual nil
+      mode-require-final-newline nil)
 
 (setq-default indent-tabs-mode nil
               require-final-newline nil)
