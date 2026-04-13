@@ -6,3 +6,5 @@ if [ "$TERM" = dumb ] ; then
   export GIT_PAGER=cat
   export GIT_EDITOR=emacsclient
 fi
+
+test -c /dev/tty && stty -ixon -ixoff
