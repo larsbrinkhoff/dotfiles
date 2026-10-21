@@ -69,6 +69,19 @@
 (add-hook 'c-mode-hook 'who-cares-if-its-tabs-or-spaces)
 (add-hook 'c++-mode-hook 'who-cares-if-its-tabs-or-spaces)
 
+(defun file-read-only-p (file)
+  (not (file-writable-p file)))
+
+(defun buffer-file-read-only-p (buffer)
+  (let ((file (buffer-file-name buffer)))
+    (and file (file-read-only-p file))))
+
+(defun activate-read-only ()
+  (when (buffer-file-read-only-p (current-buffer))
+    (read-only-mode 1)))
+
+(add-hook 'find-file-hook 'activate-read-only)
+
 (require 'server)
 (unless (server-running-p)
   (server-start))
