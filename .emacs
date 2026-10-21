@@ -82,6 +82,11 @@
 
 (add-hook 'find-file-hook 'activate-read-only)
 
+(defun set-read-only-keybindings ()
+  (keymap-local-set "R" (lambda () (interactive) (revert-buffer nil t t))))
+
+(add-hook 'read-only-mode-hook 'set-read-only-keybindings)
+
 (require 'server)
 (unless (server-running-p)
   (server-start))
