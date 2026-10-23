@@ -11,3 +11,4 @@
 	default = simple
 [init]
 	defaultBranch = master
+	defaultObjectFormat = sha1
